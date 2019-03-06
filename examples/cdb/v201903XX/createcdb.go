@@ -37,9 +37,9 @@ func main() {
 		return
 	}
 	// unexpected errors
-	if err != nil {
-		panic(err)
-	}
+	// if err != nil {
+	// 	panic(err)
+	// }
 	b, _ := json.Marshal(response.Response)
 	fmt.Printf("%s", b)
 }
