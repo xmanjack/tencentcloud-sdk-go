@@ -27,7 +27,6 @@ func main() {
 	request := cdb.NewCreateDBInstanceHourRequest()
 	request.GoodsNum = common.Int64Ptr(1)
 	request.Memory = common.Int64Ptr(1000)
-	// request.Period = common.Int64Ptr(1)
 	request.Volume = common.Int64Ptr(25)
 	request.Zone = common.StringPtr("na-siliconvalley-2")
 	response, err := client.CreateDBInstanceHour(request)
